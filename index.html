@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Noelia Guti&eacute;rrez Romero | CV</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".content .tab_content").hide();
+			$(".content .tab_content:first-child").show();
+
+			$("ul li").click(function(){
+			  
+			  $("ul li").removeClass("active");
+			  $(this).addClass("active");
+			  
+			  var current_tab = $(this).attr("data-list");
+			  $(".content .tab_content").hide();
+			  $("."+current_tab).show();
+			})
+		});
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+  <div class="tabs">
+    <ul>
+      <li class="active" data-list="tab_1">
+        <img src="images/datos.jpg" alt="Datos Personales">
+        <p>Datos Personales</p>
+      </li>
+      <li data-list="tab_2">
+        <img src="images/acad.jpg" alt="Formacion Academica">
+        Formaci&oacute;n Academica</li>
+      <li data-list="tab_3">
+        <img src="images/exp_lab.jpg" alt="Experiencia Laboral">
+        Experiencia Laboral</li>
+      <li data-list="tab_4">
+        <img src="images/contacto.jpg" alt="Contacto">
+        Contacto</li>
+    </ul>
+  </div>
+
+<div class="content">
+  <div class="tab_content tab_1">
+    <div class="row">
+      <div class="lcol">
+        <img src="images/profile.jpg" alt="Noelia" />
+      </div>
+      <div class="rcol">
+        <span> Noelia Guti&eacute;rrez Romero.</span><br>
+        Jefa de compras con más de 10 a&ntilde;os de experiencia en el sector alimenticio. Experta en an&aacute;lisis de ventas, negociaciones de precios con proveedores y compras competitivas. En busca de un puesto similar en el que seguir creciendo a nivel profesional.<br>
+        Idiomas:<br>
+        Espa&ntilde;ol: Nativo<br>
+        Ingl&eacute;s: Avanzado
+      </div>
+    </div>
+  
+  </div>
+  <div class="tab_content tab_2">
+    <p>06/2007</p>
+    <h3>INSA Business | Online</h3>
+    <p>Master en Direcci&oacute;n de Compras y Aprovisionamiento</p>
+
+    <br><br>
+
+    <p>09/2005</p>
+    <h3>IES Columela | Neuqu&eacute;n</h3>
+    <p>FP de Grado Medio en Comercio y Marketing</p>
+  </div>
+  
+  <div class="tab_content tab_3">
+    <p>01/2018 - Actual</p>
+    <h3>Sanchez Romero Carvajal | CABA</h3>
+    <p>Jefa de compras</p>
+    
+    <p>Programaci&oacute;n y organizaci&oacute;n de pruebas de inventario peri&oacute;dicas.<br>
+    An&aacute;lisis de las acciones/innovaciones de los competidores.<br>
+    An&aacute;lisis de los resultados en t&eacute;rminos de ventas, rentabilidad y frecuencia de visitas.</p>
+      <br><br>
+    <p>05/2012 - 11/2017</p>
+    <h3>Bodega Las Copas | Buenos Aires</h3>
+    <p>Jefa de compras</p>
+    
+      <p>Actualizaci&oacute;n y mantenimiento de la base de datos de materiales, productos y servicios y los cat&aacute;logos de reposici&oacute;n de los clientes.<br>
+      Implementaci&oacute;n de la estrategia de clientes definida por la compa&ntilde;&iacute;a.<br>
+      Gesti&oacute;n de obsolescencia y devoluciones a proveedores.</p>
+    <br><br>
+
+    <p>08/2008 - 01/2012</p>
+    <h3>Bodegas Barbadillo | Neuqu&eacute;n</h3>
+    <p>Responsable de compras</p>
+    
+      <p>Revisi&oacute;n de la pol&iacute;tica y procedimientos de compras de la compa&ntilde;&iacute;a.<br>
+      Capaz de lograr las mejores condiciones en cuanto a coste, calidad y condiciones log&iacute;sticas.<br>
+      Control y seguimiento de las compras y las ventas para garantizar unos niveles de existencias &oacute;ptimos.</p>
+    
+  </div>
+  <div class="tab_content tab_4">
+    <ul class="contacto">
+      <li>Tel: 11.2306.5493</li>
+      <li>Mail: noelia.gutierrez@example.com</li>
+      <li>Domicilio: Av. San Mart&iacute;n 1597. Buenos Aires.</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
